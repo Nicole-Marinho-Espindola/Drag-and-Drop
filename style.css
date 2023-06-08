@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Unica+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #ffe5f3;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Title */
@@ -12,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    font-weight: bold;
 }
 
 .main-title {
@@ -23,6 +26,7 @@
 /* Card */
 .card-block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
@@ -48,7 +52,7 @@
     height: 75px;
     width: 100%;
     color: #c63637;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 5px;
     margin: 15px;
@@ -56,4 +60,15 @@
 
 .dragging {
     opacity: 0.5;
+}
+
+@media (max-width: 600px)
+{
+  .page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
 }
